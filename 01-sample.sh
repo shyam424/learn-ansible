@@ -5,4 +5,4 @@
     - name: Install Nginx
       ansible.builtin.yum:
         name: http
-        state: latest
+        state: latestt
