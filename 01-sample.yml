@@ -4,5 +4,5 @@
   tasks:
     - name: Install Nginx
       ansible.builtin.yum:
-        name: http
+        name: httpd
         state: latest
