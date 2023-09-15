@@ -1,11 +1,17 @@
 -  name: demo on conditions
    hosts:  all
    connection:  local  ##this will run without hostname
+   vars:
+       fruit: true
+       vegetable: false
+
    tasks:
      -  name: fruit name
         ansible.builtin.debug:
           msg: fruit name- apple
+        when: fruit is true
 
-     -  name: vegetbale name
+     -  name: vegetable name
         ansible.builtin.debug:
           msg:  vegetable name -carrot
+        when: vegetable is true
