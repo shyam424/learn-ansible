@@ -1,0 +1,11 @@
+-  name: demo on conditions
+   hosts:  all
+   connection:  local  ##this will run without hostname
+   tasks:
+     -  name: fruit name
+        ansible.builtin.debug:
+          msg: fruit name- apple
+
+     -  name: vegetbale name
+        ansible.builtin.debug:
+          msg:  vegetable name -carrot
