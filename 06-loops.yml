@@ -4,7 +4,7 @@
    vars:
      fruits:
        -  orange
-       -  appl
+       -  apple
 
    tasks:
      -  name:  print fruits
